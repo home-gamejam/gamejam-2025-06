@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_lgo1b"]
 [ext_resource type="Texture2D" uid="uid://bqg6a3cx4t0ar" path="res://sprites/hiimlttlieladandim8yearsold.png" id="2_mjyk0"]
-[ext_resource type="AudioStream" uid="uid://cbebxp5cbj8u1" path="res://sounds/myinstants.mp3" id="3_dbt32"]
+[ext_resource type="AudioStream" uid="uid://deh2querw6htv" path="res://sounds/i'll-stuff-you-all-in-the-crust!.mp3" id="3_55wtw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ok666"]
 size = Vector2(13, 18)
@@ -88,4 +88,4 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_dbt32")
+stream = ExtResource("3_55wtw")

@@ -11,6 +11,8 @@ func _update_animations():
 		$Sprite2D.flip_h = true
 	elif velocity.x > 0:
 		$Sprite2D.flip_h = false
+	if Input.is_action_just_pressed("E"):
+		$AudioStreamPlayer2D.play()
 		
 
 
@@ -32,7 +34,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 		if Input.is_action_pressed("E"):
 			animations.play("keytar")
-			$AudioStreamPlayer2D.play()
+			velocity.x = 0
 		else:
 			animations.play("walk")
 	else:
@@ -41,6 +43,7 @@ func _physics_process(delta: float) -> void:
 			animations.play("keytar")
 		else:
 			animations.play("RESET")
+			$AudioStreamPlayer2D.stop()
 	
 
 	move_and_slide()
