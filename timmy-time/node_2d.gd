@@ -32,6 +32,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 		if Input.is_action_pressed("E"):
 			animations.play("keytar")
+			$AudioStreamPlayer2D.play()
 		else:
 			animations.play("walk")
 	else:
@@ -39,7 +40,6 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("E"):
 			animations.play("keytar")
 		else:
-			$AudioStreamPlayer2D.play()
 			animations.play("RESET")
 	
 
